@@ -11,7 +11,8 @@
     padding: 0 2rem;
     left: 0;
     height: var(--header-height);
-    position: sticky;
+    position: sticky; // a verifier si ça ne cause pas de probleme
+    position: absolute; // a verifier si ça ne cause pas de probleme
     transform: translateY(0);
     transition: all 0.4s ease-out;
     top: 0;
@@ -176,8 +177,28 @@
     text-transform: uppercase;
     padding: 0 20px;
     position: relative;
-    background: url(../../assets/images/hover_paint_purple.png)center no-repeat;
-    background-size: 0;
+//    background: url(../../assets/images/hover_paint_purple.png)center no-repeat;
+//    background-size: 0;
+   
+    .splash{  // la classe pour faire apparaitre le hover de peinture, s'assurer que l'image est dans html
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: 0.3s all;
+       
+        &::before{
+        transform: scale(0);
+        content: '';
+        }
+
+        &:hover{
+            opacity: 0.8;
+            transform: scale(1);
+            
+        }
+    }
     
 
     &::before {
@@ -197,7 +218,7 @@
     &:hover {
         color: inherit;
 
-        background-size: 100% 100%;
+//        background-size: 100% 100%;
 
         
     }
