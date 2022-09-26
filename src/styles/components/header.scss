@@ -176,6 +176,9 @@
     text-transform: uppercase;
     padding: 0 20px;
     position: relative;
+    background: url(../../assets/images/hover_paint_purple.png)center no-repeat;
+    background-size: 0;
+    
 
     &::before {
         display: block;
@@ -188,10 +191,15 @@
         background-color: white;
         transform: scaleX(0);
         transition: 0.3s all;
+        
     }
 
     &:hover {
         color: inherit;
+
+        background-size: 100% 100%;
+
+        
     }
 
     @media screen and (min-width: $breakpoint-md) {
