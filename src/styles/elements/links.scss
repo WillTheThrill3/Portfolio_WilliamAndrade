@@ -4,10 +4,17 @@
    ========================================================================== */
 
 a {
-    color: inherit;
+    color: var(--color-white);
     text-decoration: none;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-button);
+    text-transform: uppercase;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: var(--font-size-xs-button);      
+    }
 
     &:hover {
-        color: var(--color-primary);
+        color: var(--color-black);
     }
 }
