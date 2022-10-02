@@ -43,12 +43,25 @@
 }
 
 .logo_brand {
-    // width: 200px;
+
     position: relative;
     z-index: 10;
-    @media screen and (min-width: $breakpoint-md) {
-        position: relative;
-      //  margin: auto;
+    transform: scale(1);
+
+    :hover{
+        transition: all 0.3S $ease-out-expo;
+        transform: scale(1.15);
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        transform: scale(0.9);
+
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        transform: scale(0.8);
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        transform: scale(0.6);
     }
 }
 
