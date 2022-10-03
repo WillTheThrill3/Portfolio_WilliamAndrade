@@ -1,0 +1,88 @@
+{% include '_partials/_header.html' %}
+
+<section class="hero_projet">
+    
+    <video class="video_projet" src="assets/videos/parkour_futuriste_partie1.mp4" controls ></video>
+
+
+
+    <div class="hero__content">
+        <h2>Parkour futuriste</h2>
+        <p>Animation 2D & 3D / Modélisation / Projet étudiant </p>
+    </div>
+
+</section>
+
+<section class="projet__contenu">
+    <img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
+    
+    <div class="wrapper">
+        <h3>Description</h3>
+        <div class="contenu_description">
+
+            
+            <div class="bloc_description">
+            
+                <p>Dans ce projet, j’ai choisi la thématique de la science-fiction et futuriste avec une touche de rétro synthwave 80s.</p>
+                <p>Ceci était un projet scolaire réalisé individuellement. Mon objectif était d’intégrer de l’animation 2D dans un univers 3D avec Blender.</p>
+            </div>
+
+            <div>
+                         <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_content.jpg" alt=""></a>   
+
+            <div class="credit-projet">
+
+                <p>Musique: <a class="credit-link" href="https://www.youtube.com/watch?v=nUEM0Tj24AA" target="_blank" >DivKid - Impulse</a> </p>
+                <p>Référence animation: <a class="credit-link" href="https://www.mixamo.com/" target="_blank" >Mixamo</a> </p>
+            </div>
+            </div>
+
+        </div>
+        
+        <h3>Techniques</h3>
+        <div class="contenu_technique">
+
+            <div class="bloc_technique">
+                <p>J’ai fait l’usage du "Shading" de Blender afin de créer des belles textures uniques qui harmonise bien l’ambiance que je recherchais.</p>
+                <p>Chaque texture dont la luminosité, l’émission, la réflexion métallique, la brume et les couleur ont été conçu avec le "Shading".</p>
+            </div>
+
+            <a href="#" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_shading1.png" alt=""></a>
+                
+            
+
+        </div>
+        <h3>Organisation</h3>
+        <div class="contenu_organisation">
+
+            <div class="bloc_organisation">
+                <p>Je m’applique à organiser les structures et modélisation de sorte que ce soit le plus claire possible pour moi et pour autrui.</p>      
+            </div>
+
+            <div class="gallerie">
+                <img src="./assets/images/futuriste_shading2.png" alt="">
+                <img src="./assets/images/futuriste_shading3.png" alt="">
+                <img src="./assets/images/futuriste_hierarchy.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<template id="tpl-modal"> <!-- le ID dans lequel activera la fenêtre modale -->
+    <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
+        <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
+        <div class="modal__box"> <!-- le boite de la fenêtre modale -->
+            <div class="modal__content"> <!-- la classe contenant les propriétés pour le contenu de la fenêtre modale -->
+
+            </div>
+            <button class="modal__close js-close"></button> <!-- le bouton X pour fermer la fenêtre modale -->
+        </div>
+    </div>
+</template>
+
+
+{% include '_partials/_footer.html' %}

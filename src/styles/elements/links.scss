@@ -21,6 +21,18 @@ a {
 
 }
 
+.credit-link{
+    text-decoration: underline;
+    text-transform: none;
+    color: var(--color-button-purple);
+    font-size: var(--font-size-credit);
+    font-family: var(--font-secondary);
+    margin: 0;  
+    &:hover {
+        color: var(--color-primary-dark-blue);
+    }
+}
+
 .btn_cyan{  // à modifier au choix
     transition: all 0.5s $ease-out-expo;
     background-color: var(--color-button-cyan);
