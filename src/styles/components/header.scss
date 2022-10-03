@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .header {
-    --header-height: 140px;
+    --header-height: 110px;
 
     align-items: center;
     display: flex;
@@ -46,22 +46,22 @@
 
     position: relative;
     z-index: 10;
-    transform: scale(1);
+    transform: scale(0.8);
 
     :hover{
         transition: all 0.3S $ease-out-expo;
-        transform: scale(1.15);
+        transform: scale(1.1);
     }
 
     @media screen and (max-width: $breakpoint-md) {
-        transform: scale(0.9);
+        transform: scale(0.7);
 
     }
     @media screen and (max-width: $breakpoint-sm) {
-        transform: scale(0.8);
+        transform: scale(0.6);
     }
     @media screen and (max-width: $breakpoint-xs) {
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
 }
 
@@ -260,7 +260,7 @@
 
         &:hover {
             text-decoration: none;
-            color: var(--color-white);
+            color: var(--color-primary-dark-blue);
             
             &::before {
                 transform: scaleX(1);
