@@ -47,15 +47,7 @@
 
 .projet__contenu{
 
-        .bg-portfolio{
-        position: fixed;
-        z-index: -10;
-        top: 0;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
 
-    }
 
     h3{
       display: grid;
@@ -91,7 +83,7 @@
             a{ 
                 
                 :hover{
-                    transition: all 0.4s ease-out;
+                    transition: all 0.4s $ease-out-expo;
                     transform: scale(1.15);
                 
                 }
@@ -165,7 +157,7 @@
 
             
             :hover{
-                transition: all 0.4s ease-out;
+                transition: all 0.4s $ease-out-expo;
                 transform: scale(1.15);
             
             }
@@ -254,7 +246,7 @@
  
                 
                 :hover{
-                    transition: all 0.4s ease-out;
+                    transition: all 0.4s $ease-out-expo;
                     transform: scale(1.15);
                 
                 }

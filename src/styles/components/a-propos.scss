@@ -1,0 +1,114 @@
+.contenu_profil{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding-bottom: 180px;
+
+    .bloc-profil{
+        padding: 80px 0 0 0;
+
+        h4{
+            padding: 0 0 60px 0;
+            color: var(--color-secondary-purple);
+        }
+
+        p{
+            padding: 20px 0;
+        }
+
+        .bloc-btn{
+            padding: 50px 0 0 0;
+
+            a{
+                margin-right: 40px;
+            }
+        }
+    }
+    
+    
+    .profil_image{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img:nth-child(1){
+            position: absolute;
+            height: 60%;
+            top: 40%;
+            right: 10%;
+            z-index: 1;
+        }
+        img:nth-child(2){
+            position: absolute;
+            height: 80%;
+        }
+        img:nth-child(3){
+            height: 60%;
+            top: 20%;
+            position: absolute;
+            z-index: -1;
+        }
+        
+    }
+
+}
+
+.contenu_connaissance{
+    
+    .bloc-connaissance{
+        display: grid;
+        grid-template-columns: 1fr 1fr 10%;
+        gap: 80px;
+
+        padding: 120px 0;
+        
+
+        div{
+            display: flex;
+            align-items: center;
+            img{
+                padding-right: 40px;
+            }
+        }
+        div:nth-child(3){
+            grid-row-start: 2;
+        }
+        div:nth-child(4){
+            grid-row-start: 2;
+        }
+    }
+    
+}
+.contenu_hobby{
+    
+    .cards-hobby{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 160px;
+
+        padding: 120px 0;
+
+        .card{
+            border: 5px solid var(--color-primary-dark-blue);
+            padding: 40px 30px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    
+}
+
+.highlight-text{
+    background-color: var(--color-highlight-text-cyan);
+}
+
+.text-color{
+    color: var(--color-primary-dark-blue);
+}
+
+p{
+    font-family: var(--font-tertiary);
+}

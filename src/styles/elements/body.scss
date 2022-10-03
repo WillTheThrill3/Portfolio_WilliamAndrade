@@ -14,3 +14,15 @@ body {
 
 
 }
+
+
+// image de background qui sera appliqué partout
+.bg-portfolio{
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
