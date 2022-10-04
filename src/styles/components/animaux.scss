@@ -73,7 +73,7 @@
        padding-right: 5%;
        
 
-        @media screen and (max-width: $breakpoint-md) {  
+        @media screen and (max-width: 1260px) {  
            display: flex;
            padding: 0;
            justify-content: center;
@@ -132,11 +132,19 @@
         }
 
         .bloc_description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
             background-color: var(--color-white);
             border-radius: 10px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+
+
+
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -146,11 +154,14 @@
                 padding-bottom: 30px;
             }
 
+
+
         }
         
         .credit-projet{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
+            gap: 15px;
             
             
             padding: 20px;
@@ -172,10 +183,11 @@
     .contenu_technique{
         display: grid;
         grid-template-columns: 2fr 1fr;
+        
         gap: 30px;
         padding: 50px 0 160px 0;
 
-        @media screen and (max-width: $breakpoint-md) {  
+        @media screen and (max-width: 1260px) {  
            display: flex;
            flex-direction: column;
            gap: 20px;
@@ -237,7 +249,7 @@
 
 
 
-        img{
+        video{
             border-radius: 10px;
             height: 100%; // pour remplir l'espace restant du display: grid; de gallerie
             width: 100%;
@@ -269,9 +281,9 @@
             }
         }
 
-        .gallerie-dino{
+        .gallerie{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
 
 

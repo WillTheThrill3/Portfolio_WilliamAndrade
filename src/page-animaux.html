@@ -1,0 +1,102 @@
+{% include '_partials/_header.html' %}
+
+<section class="hero_projet">
+    
+    <img class="video_projet" src="./assets/images/sansvie_project.jpg" alt="">
+
+
+
+    <div class="hero__content">
+        <h2>Sensibilisation des animaux</h2>
+        <p>Pixel Art / Design UI & UX / Projet étudiant </p>
+    </div>
+
+</section>
+
+<section class="projet__contenu">
+    <img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
+    
+    <div class="wrapper">
+        <h3>Description</h3>
+        <div class="contenu_description">
+
+            
+            <div class="bloc_description">
+            
+                <p>En équipe, nous avions eu l’objectif de faire un projet intéractif sur Figma et qui sensibilisera sur les animaux rejeté.</p>
+                <p>Nous avions eu une bonne synergie, car on s’entraidait par tous les moyens.</p>
+
+                <a class="btn_purple" href="https://www.figma.com/proto/dAiPQc096FuZouZruREkiF/Sensibilisation-des-animaux-TP3?node-id=1008%3A64&scaling=scale-down-width&page-id=2%3A3&starting-point-node-id=1008%3A64&show-proto-sidebar=1" target="_blank">
+                    <span>
+                        VOIR LE PROJET
+                    </span>
+                </a> 
+            </div>
+
+            <div class="encadrement-credit">
+                <div class="tester">
+                    <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/animaux_content2.jpg" alt=""></a>   
+                </div>
+                         
+
+                <div class="credit-projet">
+
+                    <p>Équipe: <a class="credit-link" href="#" target="_blank" >Raphael Bouchard ,</a><a class="credit-link" href="#" target="_blank" >Ariane Normandeau ,</a><a class="credit-link" href="#" target="_blank" >Cynthia Robert</a></p>
+                    
+                    <p>Référence: <a class="credit-link" href="https://www.nintendo.com/fr-ca/" target="_blank" >Nintendo</a></p>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        <h3>Maquettes</h3>
+        <div class="contenu_technique">
+
+            <div class="bloc_technique">
+                <p>Les maquettes ont été conçu avec beaucoup d’attention afin d’harmoniser le style et le concept de notre projet.</p>
+                <p>Nous avions conclus de faire ce projet dans le style jeu rétro.</p>
+                
+                
+            </div>
+
+            <a href="#" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/animaux_content.jpg" alt=""></a>
+                
+            
+
+        </div>
+        <h3>Pixel Art</h3>
+        <div class="contenu_organisation">
+
+            <div class="bloc-organisation">
+                <p>Voici quelques exemples de mes Pixel Arts. Je suis toujours partant à développer cette nouvelle passion!</p>      
+            </div>
+
+            <div class="gallerie">
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/raphael's bunny.mp4" loop="loop" autoplay="autoplay" muted></video></a>
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/dog_play.mp4" loop="loop" autoplay="autoplay" muted></video></a>
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/ariane's cat.mp4" loop="loop" autoplay="autoplay" muted></video></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<template id="tpl-modal"> <!-- le ID dans lequel activera la fenêtre modale -->
+    <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
+        <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
+        <div class="modal__box"> <!-- le boite de la fenêtre modale -->
+            <div class="modal__content"> <!-- la classe contenant les propriétés pour le contenu de la fenêtre modale -->
+
+            </div>
+            <button class="modal__close js-close"></button> <!-- le bouton X pour fermer la fenêtre modale -->
+        </div>
+    </div>
+</template>
+
+
+{% include '_partials/_footer.html' %}
