@@ -1,0 +1,94 @@
+{% include '_partials/_header.html' %}
+
+<section class="hero_projet">
+    
+    <video class="video_projet" src="assets/videos/recette-short-vid.mp4" controls ></video>
+
+
+
+    <div class="hero__content">
+        <h2>Recette en pot</h2>
+        <p>Programmation / Design web / Projet étudiant </p>
+    </div>
+
+</section>
+
+<section class="projet__contenu">
+    <img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
+    
+    <div class="wrapper">
+        <h3>Description</h3>
+        <div class="contenu_description">
+
+            
+            <div class="bloc_description">
+            
+                <p>L’objectif était de faire une refonte du site Recette en pot en appliquant les techniques de Design UI/UX. Ensuite, j'ai reproduit une selection de mes maquettes en programmation.</p>
+                <p>Figma est le logiciel dans lequel j’ai travaillé pour ce projet.</p>
+                
+            </div>
+
+            <div class="encadrement-credit">
+                <div class="tester">
+                    <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/recette_content.png" alt=""></a>   
+                </div>
+                         
+
+                <div class="credit-projet">
+
+                    <p>Crédit: <a class="credit-link" href="https://recettesenpot.com/" target="_blank" >Recette en pot</a> </p>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        <h3>Techniques</h3>
+        <div class="contenu_technique">
+
+            <div class="bloc_technique">
+                <p>Les maquettes ont été conçu avec beaucoup de réflexions afin de répondre aux besoins de l’usager.</p>
+                <p>Elles ont été harmonisée avec les couleurs représentatives de la compagnie Recette en pot.</p>
+                <p>En programmation, j'ai fait l'usage des composantes en Javascript pour rendre le site interactif.</p>
+            </div>
+
+            <a href="#" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/recette_content2.jpg" alt=""></a>
+                
+            
+
+        </div>
+        <h3>Programmations</h3>
+        <div class="contenu_organisation">
+
+            <div class="bloc-organisation">
+                <p>Je m’applique à organiser mes codes pour facilité la lisibilité pour autrui et pour moi.</p>      
+            </div>
+
+            <div class="gallerie">
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><p>Html</p><img src="./assets/images/recette_html.png" alt=""></a>
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><p>Css</p><img src="./assets/images/recette_css.png" alt=""></a>
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><p>Js</p><img src="./assets/images/recette_js.png" alt=""></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<template id="tpl-modal"> <!-- le ID dans lequel activera la fenêtre modale -->
+    <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
+        <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
+        <div class="modal__box"> <!-- le boite de la fenêtre modale -->
+            <div class="modal__content"> <!-- la classe contenant les propriétés pour le contenu de la fenêtre modale -->
+
+            </div>
+            <button class="modal__close js-close"></button> <!-- le bouton X pour fermer la fenêtre modale -->
+        </div>
+    </div>
+</template>
+
+
+{% include '_partials/_footer.html' %}
