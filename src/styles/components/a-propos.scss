@@ -64,6 +64,9 @@
 
             a{
                 margin-right: 40px;
+                @media screen and (max-width: $breakpoint-md) {
+                    margin-right: 20px;
+                 }
                 @media screen and (max-width: $breakpoint-sm) {
                     margin: 0;
                  }
@@ -88,10 +91,21 @@
             right: 5%;
             z-index: 1;
             object-fit: cover;
-            @media screen and (max-width: $breakpoint-md) {
+            @media screen and (max-width: 1040px) {
                 height: 40%;  
+                
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                height: 35%;  
+                top: 30%;
                 right: auto;
             }
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 50%;  
+                top: 35%;
+                right: auto;
+            }
+            
 
         }
         img:nth-child(2){
@@ -100,8 +114,18 @@
             object-fit: cover;
     
 
-            @media screen and (max-width: $breakpoint-md) {
+            @media screen and (max-width: $breakpoint-lg) {
+                height: 68%;  
+                
+            }
+            @media screen and (max-width: 1040px) {
                 height: 60%;  
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                height: 45%;     
+            }
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 70%;     
             }
 
         }
@@ -113,8 +137,15 @@
             position: absolute;
             z-index: -1;
             object-fit: cover;
-            @media screen and (max-width: $breakpoint-md) {
+            @media screen and (max-width: 1040px) {
                 height: 30%;  
+            }
+            @media screen and (max-width: $breakpoint-md) {  
+                right: auto;
+            }
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 60%;  
+                top: 15%;
                 right: auto;
             }
 
