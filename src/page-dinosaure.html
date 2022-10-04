@@ -1,0 +1,93 @@
+{% include '_partials/_header.html' %}
+
+<section class="hero_projet">
+    
+    <video class="video_projet" src="assets/videos/le_dinosaure.mp4" controls ></video>
+
+
+
+    <div class="hero__content">
+        <h2>Le dinosaure</h2>
+        <p>Animation 3D / Modélisation / Projet étudiant </p>
+    </div>
+
+</section>
+
+<section class="projet__contenu">
+    <img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
+    
+    <div class="wrapper">
+        <h3>Description</h3>
+        <div class="contenu_description">
+
+            
+            <div class="bloc_description">
+            
+                <p>Ce projet scolaire était ma toute première animation 3D.</p>
+                <p>Avant de me mettre en action, j’ai crée un "Storytelling" afin d’avoir les idées claire sur la conceptualisation du projet.</p>
+                <p>J’ai modélisé mon personnage en suivant certain tutoriel afin d’acquérir de nouvelles techniques.</p>
+            </div>
+
+            <div class="encadrement-credit">
+                <div class="tester">
+                    <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/dino_content.jpg" alt=""></a>   
+                </div>
+                         
+
+                <div class="credit-projet">
+
+                    <p>Musique: <a class="credit-link" href="https://www.youtube.com/watch?v=EjZJdw9gJ9g" target="_blank" >Natural - Endless Love</a> </p>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        <h3>Techniques</h3>
+        <div class="contenu_technique">
+
+            <div class="bloc_technique">
+                <p>J’ai appliqué de nouvelles techniques qui m’a permis d’évoluer.</p>
+                <p>J’ai crée et intégré un fond d’écran "EXR" avec adobe Illustrator et une image de couleur pour la texture, ce qui m’a permis d’avoir un fichier plus léger.</p>
+                <p>La création d’armature a été façonner manuellement grâce à des tutoriels.</p>
+            </div>
+
+            <a href="#" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_shading1.png" alt=""></a>
+                
+            
+
+        </div>
+        <h3>Organisation</h3>
+        <div class="contenu_organisation">
+
+            <div class="bloc-organisation">
+                <p>Je m’applique à organiser les structures et modélisation de sorte que ce soit le plus claire possible pour moi et pour autrui.</p>      
+            </div>
+
+            <div class="gallerie">
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/dino_hierarchy1.png" alt=""></a>
+                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/dino_hierarchy2.png" alt=""></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<template id="tpl-modal"> <!-- le ID dans lequel activera la fenêtre modale -->
+    <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
+        <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
+        <div class="modal__box"> <!-- le boite de la fenêtre modale -->
+            <div class="modal__content"> <!-- la classe contenant les propriétés pour le contenu de la fenêtre modale -->
+
+            </div>
+            <button class="modal__close js-close"></button> <!-- le bouton X pour fermer la fenêtre modale -->
+        </div>
+    </div>
+</template>
+
+
+{% include '_partials/_footer.html' %}
