@@ -1,4 +1,4 @@
-.hero_projet {
+.hero_projet-futuriste {
     display: flex;
     justify-content: center;
     top: -140px;
@@ -51,7 +51,7 @@
 
 } 
 
-.projet__contenu{
+.projet__contenu-futuriste{
 
 
 
@@ -86,29 +86,32 @@
     }
 
 
-    .contenu_description{
+    .contenu_description-futuriste{
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 30px;
 
         
-        padding: 50px 0 160px 0;
+        padding: 50px 0 120px 0;
 
         @media screen and (max-width: 1260px) {
             grid-template-columns: none;   
             gap: 20px;   
         }
         @media screen and (max-width: $breakpoint-md) {
-            
+            gap: 0;
         }
-        @media screen and (max-width: $breakpoint-sm) {
-            
-        }
+
 
         .tester{
             overflow: hidden;
             border-radius: 10px;
             height: 80%;
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0;
+                height: 70%;
+            }
+
             a{ 
                 
                 :hover{
@@ -123,6 +126,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media screen and (max-width: $breakpoint-md) {  
+                justify-content: flex-start;  
+            }
         }
 
         
@@ -133,6 +139,9 @@
             width: 100%;
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0;
+            }
 
         }
 
@@ -142,6 +151,12 @@
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {  
+                padding: 20px;
+             }
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 10px 10px 0 0;
+             }
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -162,6 +177,12 @@
             border-radius: 10px;
             background-color: var(--color-white);
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0 0 10px 10px;
+            }
+            @media screen and (max-width: $breakpoint-sm) {  
+                grid-template-columns: 1fr;  
+            }
 
             p{
                 font-size: var(--font-size-credit);
@@ -174,7 +195,7 @@
 
         }
     }
-    .contenu_technique{
+    .contenu_technique-futuriste{
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 30px;
@@ -183,13 +204,23 @@
         @media screen and (max-width: $breakpoint-md) {  
            display: flex;
            flex-direction: column;
-           gap: 20px;
+           gap: 0;
         }
 
 
         a{ // effet de zoom d'une image sans dépasser sa dimension
             overflow: hidden;
             border-radius: 10px;
+            height: 400px;
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0 0 10px 10px; 
+            }
+            @media screen and (max-width: $breakpoint-sm) {  
+                 height: 300px;
+            }
+            @media screen and (max-width: $breakpoint-xs) {  
+                 height: 250px;
+            }
 
             
             :hover{
@@ -207,20 +238,28 @@
             width: 100%;
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
-
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0; 
+            }
         }
         .modale-img{
             grid-row-start: 1;
 
         }
 
-        .bloc_technique{
+        .bloc_technique-futuriste{
             grid-column-start: 2;
             background-color: var(--color-white);
             border-radius: 10px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 10px 10px 0 0 ; 
+                padding: 20px;
+            }
+
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -233,7 +272,7 @@
         }
 
     }
-    .contenu_organisation{
+    .contenu_organisation-futuriste{
         display: grid;
     
      
@@ -252,7 +291,7 @@
 
         }
 
-        .bloc-organisation{
+        .bloc-organisation-futuriste{
             display: flex;
             text-align: center;
             align-items: center;

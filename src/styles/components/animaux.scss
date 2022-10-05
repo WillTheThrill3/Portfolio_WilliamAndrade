@@ -51,7 +51,7 @@
 
 } 
 
-.projet__contenu{
+.projet__contenu-animaux{
 
 
 
@@ -86,17 +86,20 @@
     }
 
 
-    .contenu_description{
+    .contenu_description-animaux{
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 30px;
+        @media screen and (max-width: $breakpoint-md) {  
+            gap: 0;
+        }
 
         
         padding: 50px 0 160px 0;
 
         @media screen and (max-width: 1315px) {
             grid-template-columns: none;   
-            gap: 20px;   
+            padding-bottom: 120px;
         }
 
 
@@ -104,6 +107,10 @@
             overflow: hidden;
             border-radius: 10px;
             height: 80%;
+
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0;
+            }
             a{ 
                 
                 :hover{
@@ -118,6 +125,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            
         }
 
         
@@ -129,9 +137,14 @@
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
 
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0;
+                height: 100%;
+            }
+
         }
 
-        .bloc_description{
+        .bloc_description-animaux{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -142,6 +155,11 @@
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 10px 10px 0 0;
+                padding: 20px;
+            }
 
 
 
@@ -169,6 +187,10 @@
             background-color: var(--color-white);
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
 
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0 0 10px 10px;
+            }
+
             p{
                 font-size: var(--font-size-credit);
                 font-family: var(--font-secondary);
@@ -180,7 +202,7 @@
 
         }
     }
-    .contenu_technique{
+    .contenu_technique-animaux{
         display: grid;
         grid-template-columns: 2fr 1fr;
         
@@ -192,12 +214,25 @@
            flex-direction: column;
            gap: 20px;
         }
+        @media screen and (max-width: $breakpoint-md) {  
+            gap: 0;
+        }
 
 
         a{ // effet de zoom d'une image sans dépasser sa dimension
             overflow: hidden;
             border-radius: 10px;
 
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0 0 10px 10px;
+                height: 400px;  
+            }
+            @media screen and (max-width: $breakpoint-sm) {    
+                height: 350px;  
+            }
+            @media screen and (max-width: $breakpoint-xs) {    
+                height: 200px;  
+            }
             
             :hover{
                 transition: all 0.8s $ease-out-expo;
@@ -215,19 +250,36 @@
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
 
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0 0 10px 10px;
+                height: 400px;   
+            }
+            @media screen and (max-width: $breakpoint-sm) {    
+                height: 350px;  
+            }
+            @media screen and (max-width: $breakpoint-xs) {    
+                height: 200px;  
+            }
+
         }
         .modale-img{
             grid-row-start: 1;
 
         }
 
-        .bloc_technique{
+        .bloc_technique-animaux{
             grid-column-start: 2;
             background-color: var(--color-white);
             border-radius: 10px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0;
+                padding: 20px;
+            }
+
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -240,7 +292,7 @@
         }
 
     }
-    .contenu_organisation{
+    .contenu_organisation-animaux{
         display: grid;
     
      
@@ -259,7 +311,7 @@
 
         }
 
-        .bloc-organisation{
+        .bloc-organisation-animaux{
             display: flex;
             text-align: center;
             align-items: center;

@@ -51,7 +51,7 @@
 
 } 
 
-.projet__contenu{
+.projet__contenu-dino{
 
 
 
@@ -86,7 +86,7 @@
     }
 
 
-    .contenu_description{
+    .contenu_description-dino{
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 30px;
@@ -96,7 +96,7 @@
 
         @media screen and (max-width: 1315px) {
             grid-template-columns: none;   
-            gap: 20px;   
+            gap: 0;   
         }
 
 
@@ -104,6 +104,9 @@
             overflow: hidden;
             border-radius: 10px;
             height: 80%;
+            @media screen and (max-width: 1315px) {
+                border-radius: 0;
+            }
             a{ 
                 
                 :hover{
@@ -118,6 +121,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media screen and (max-width: 1315px) {  
+               justify-content: flex-start;
+             }
         }
 
         
@@ -128,15 +134,21 @@
             width: 100%;
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
-
+            @media screen and (max-width: 1315px) {
+                border-radius: 0;           
+            }
         }
 
-        .bloc_description{
+        .bloc_description-dino{
             background-color: var(--color-white);
             border-radius: 10px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: 1315px) {  
+                padding: 20px;
+                border-radius:10px 10px 0 0 ;
+             }
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -150,13 +162,17 @@
         
         .credit-projet{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr ;
             
             
             padding: 20px;
             border-radius: 10px;
             background-color: var(--color-white);
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: 1315px) {  
+                border-radius: 0 0  10px 10px;
+             }
+
 
             p{
                 font-size: var(--font-size-credit);
@@ -169,7 +185,7 @@
 
         }
     }
-    .contenu_technique{
+    .contenu_technique-dino{
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 30px;
@@ -178,14 +194,16 @@
         @media screen and (max-width: $breakpoint-md) {  
            display: flex;
            flex-direction: column;
-           gap: 20px;
+           gap: 0;
         }
 
 
         a{ // effet de zoom d'une image sans dépasser sa dimension
             overflow: hidden;
-            border-radius: 10px;
-
+            border-radius:10px;
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0 0  10px 10px;
+             }
             
             :hover{
                 transition: all 0.8s $ease-out-expo;
@@ -202,20 +220,27 @@
             width: 100%;
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
-
+            @media screen and (max-width: $breakpoint-md) {  
+                border-radius: 0 0  10px 10px;
+             }
         }
         .modale-img{
             grid-row-start: 1;
 
         }
 
-        .bloc_technique{
+        .bloc_technique-dino{
             grid-column-start: 2;
             background-color: var(--color-white);
             border-radius: 10px;
+            
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {  
+                padding: 20px;
+                border-radius: 10px 10px 0 0 ;
+             }
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -228,7 +253,7 @@
         }
 
     }
-    .contenu_organisation{
+    .contenu_organisation-dino{
         display: grid;
     
      
@@ -247,7 +272,7 @@
 
         }
 
-        .bloc-organisation{
+        .bloc-organisation-dino{
             display: flex;
             text-align: center;
             align-items: center;

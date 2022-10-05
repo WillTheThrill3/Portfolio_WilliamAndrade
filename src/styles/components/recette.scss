@@ -51,7 +51,7 @@
 
 } 
 
-.projet__contenu{
+.projet__contenu-recette{
 
 
 
@@ -86,17 +86,20 @@
     }
 
 
-    .contenu_description{
+    .contenu_description-recette{
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 30px;
 
         
-        padding: 50px 0 160px 0;
+        padding: 50px 0 120px 0;
 
         @media screen and (max-width: 1315px) {
             grid-template-columns: none;   
-            gap: 20px;   
+            gap: 20px;  
+            @media screen and (max-width: $breakpoint-md) {
+                gap: 0;
+            } 
         }
 
 
@@ -104,6 +107,9 @@
             overflow: hidden;
             border-radius: 10px;
             height: 80%;
+            @media screen and (max-width: $breakpoint-md) {
+                border-radius: 0;
+            }
             a{ 
                 
                 :hover{
@@ -118,6 +124,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media screen and (max-width: $breakpoint-md) {
+                justify-content: flex-start;
+            }
         }
 
         
@@ -128,15 +137,23 @@
             width: 100%;
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {
+                border-radius: 0;
+            }
 
         }
 
-        .bloc_description{
+        .bloc_description-recette{
             background-color: var(--color-white);
             border-radius: 10px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {
+                border-radius: 10px 10px 0 0 ;
+                padding: 20px;
+            }
+
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -144,19 +161,26 @@
            
             p:nth-child(2){
                 padding-bottom: 30px;
+                @media screen and (max-width: $breakpoint-md) {
+                    padding: 0;
+                }
             }
 
         }
         
         .credit-projet{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             
             
             padding: 20px;
             border-radius: 10px;
             background-color: var(--color-white);
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {
+                border-radius: 0 0 10px 10px;
+
+            }
 
             p{
                 font-size: var(--font-size-credit);
@@ -169,7 +193,7 @@
 
         }
     }
-    .contenu_technique{
+    .contenu_technique-recette{
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 30px;
@@ -180,11 +204,19 @@
            flex-direction: column;
            gap: 20px;
         }
+        @media screen and (max-width: $breakpoint-md) {
+            gap: 0;
+        }
 
 
         a{ // effet de zoom d'une image sans dépasser sa dimension
             overflow: hidden;
             border-radius: 10px;
+            height: 100%;
+            @media screen and (max-width: $breakpoint-md) {
+                border-radius: 0 0 10px 10px;
+                height: 300px;
+            }
 
             
             :hover{
@@ -202,6 +234,14 @@
             width: 100%;
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {
+                border-radius: 0;
+                height: 350px;
+            }
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 300px;
+            }
+
 
         }
         .modale-img{
@@ -209,13 +249,17 @@
 
         }
 
-        .bloc_technique{
+        .bloc_technique-recette{
             grid-column-start: 2;
             background-color: var(--color-white);
             border-radius: 10px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
+            @media screen and (max-width: $breakpoint-md) {
+                padding: 20px;
+                border-radius: 10px 10px 0 0;
+            }
             p{
                 font-family: var(--font-tertiary);
                 margin: 0;
@@ -228,7 +272,7 @@
         }
 
     }
-    .contenu_organisation{
+    .contenu_organisation-recette{
         display: grid;
     
      
@@ -247,7 +291,7 @@
 
         }
 
-        .bloc-organisation{
+        .bloc-organisation-recette{
             display: flex;
             text-align: center;
             align-items: center;
