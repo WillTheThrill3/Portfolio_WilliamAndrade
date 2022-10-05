@@ -1,4 +1,4 @@
-import Swiper from 'swiper/bundle';
+import Swiper from 'swiper/swiper-bundle'; /** je ne comprend pas pourquoi 'swiper/bundle' ne fonctionne pas */
 
 /** Composante Carousel de Timtools */
 export default class Carousel {

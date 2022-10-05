@@ -296,7 +296,7 @@
         display: grid;
     
      
-        gap: 30px;
+        gap: 20px;
         padding: 50px 0 160px 0;
 
 
@@ -336,7 +336,7 @@
         .gallerie{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 30px;
+            gap: 20px;
 
 
             @media screen and (max-width: $breakpoint-md) {  

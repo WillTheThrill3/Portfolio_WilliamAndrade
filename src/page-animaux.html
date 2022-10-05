@@ -86,17 +86,19 @@
 
 </section>
 
-<template id="tpl-modal"> <!-- le ID dans lequel activera la fenêtre modale -->
+<template id="tpl-modal-tool"> <!-- le ID dans lequel activera la fenêtre modale -->
     <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
         <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
         <div class="modal__box"> <!-- le boite de la fenêtre modale -->
             <div class="modal__content"> <!-- la classe contenant les propriétés pour le contenu de la fenêtre modale -->
-
+                <video src="./assets/videos/raphael's bunny.mp4" loop="loop" autoplay="autoplay" muted></video>    
             </div>
             <button class="modal__close js-close"></button> <!-- le bouton X pour fermer la fenêtre modale -->
         </div>
     </div>
 </template>
+
+
 
 
 {% include '_partials/_footer.html' %}
