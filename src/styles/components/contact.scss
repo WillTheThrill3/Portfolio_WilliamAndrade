@@ -1,0 +1,49 @@
+.contact{
+
+
+
+    .info-contact{
+
+        .reseaux-sociaux{
+            display: flex;
+            @media screen and (max-width: 860px) {
+                padding-bottom: 15px;
+             }
+
+            a{
+                display: flex;
+                content: '';
+                list-style: none;
+                margin: 0 10px;
+                transition: all 0.4s $ease-out-expo;
+                transform: scale(1);
+                @media screen and (max-width: 500px) {
+                    margin: 0 10px;
+                 }
+
+                :hover{
+                    transform: scale(1.4);
+                    transition: all 0.4s $ease-out-expo;
+
+                }
+            }
+        }
+
+
+    }
+    
+}
+.lien{
+    display: flex;
+    a{
+        display: flex;
+        content: '';
+        transition: all 0.4s $ease-out-expo;
+        transform: scale(1);
+        color: var(--color-button-purple); 
+    }
+    a:hover{
+        transform: scale(1.4);
+    }
+
+}
