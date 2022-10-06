@@ -13,28 +13,28 @@
 
 </section>
 
-<section class="projet__contenu-opening">
+<section class="projet__contenu-opening" data-component="Scrolly">
     <img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
     
     <div class="wrapper">
-        <h3>Description</h3>
+        <h3 data-scrolly="fromLeft">Description</h3>
         <div class="contenu_description-opening">
 
             
-            <div class="bloc_description-opening">
+            <div class="bloc_description-opening" data-scrolly="fromLeft">
             
                 <p>Un projet scolaire centré sur le montage vidéo et effet visuel.</p>
                 <p>Je me suis donné le défi de monter une vidéo libre de droit qui provient de Pexels.</p>
                 <p>Mon objectif était de monter une vidéo dans une thématique que je n’avais jamais exploré, celui de l’art martiaux.</p>
             </div>
 
-            <div class="encadrement-credit">
+            <div class="encadrement-credit" data-scrolly="fromRight">
                 <div class="tester">
                     <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/opening_content.jpg" alt=""></a>   
                 </div>
                          
 
-                <div class="credit-projet">
+                <div class="credit-projet" data-scrolly="fromRight">
 
                     <p>Musique: <a class="credit-link" href="https://www.youtube.com/watch?v=OgzYvsYD-os" target="_blank" >Addict - NEFFEX</a></p>
                     <p>Référence vidéo: <a class="credit-link" href="https://www.pexels.com/fr-fr/" target="_blank" >Pexels</a></p>
@@ -45,31 +45,31 @@
 
         </div>
         
-        <h3>Techniques</h3>
+        <h3 data-scrolly="fromRight">Techniques</h3>
         <div class="contenu_technique-opening">
 
-            <div class="bloc_technique-opening">
+            <div class="bloc_technique-opening" data-scrolly="fromRight">
                 <p>Ce projet m’a permis d'approfondir les techniques d’effets visuelles, textuelles et synchronisations de transition.</p>
                 <p>J'ai utilisé Adobe Premiere Pro afin d'effectuer les séquences. Ensuite, j'ai travaillé avec le logiciel Adobe After Effect pour harmoniser mon concept.</p>
                 <p>Maintenant, je suis plus attentif aux détails d’un montage vidéo et je cherche à viser plus haut.</p>
                 
             </div>
 
-            <a href="#" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/effet_glitch.gif" alt=""></a>
+            <a href="#" data-scrolly="fromLeft" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/effet_glitch.gif" alt=""></a>
                 
             
 
         </div>
-        <h3>Effets visuels</h3>
+        <h3 data-scrolly="fromBottom">Effets visuels</h3>
         <div class="contenu_organisation-opening">
 
-            <div class="bloc-organisation-opening">
+            <div class="bloc-organisation-opening" data-scrolly="fromBottom">
                 <p>J’ai utilisé l’effet de tremblement, echo, bruit, dispersion, bruit fractal, etc... Suffisament pour atirer l’attention.</p>      
             </div>
 
             <div class="gallerie-effet">
-                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/effet-visuel-1.mp4" loop="loop" autoplay="autoplay" muted></video></a>
-                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/effet-visuel-2.mp4" loop="loop" autoplay="autoplay" muted></video></a>
+                <a href="#" data-scrolly="fromLeft" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/effet-visuel-1.mp4" loop="loop" autoplay="autoplay" muted></video></a>
+                <a href="#" data-scrolly="fromRight" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/effet-visuel-2.mp4" loop="loop" autoplay="autoplay" muted></video></a>
 
             </div>
 
@@ -80,7 +80,7 @@
 
 </section>
 
-<template id="tpl-modal"> <!-- le ID dans lequel activera la fenêtre modale -->
+<template id="tpl-modal-tool"> <!-- le ID dans lequel activera la fenêtre modale -->
     <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
         <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
         <div class="modal__box"> <!-- le boite de la fenêtre modale -->

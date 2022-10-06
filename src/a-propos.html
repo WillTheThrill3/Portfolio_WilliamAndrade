@@ -1,7 +1,7 @@
 {% include '_partials/_header.html' %}
 
 <img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
-<section class="contenu_profil wrapper">
+<section class="contenu_profil wrapper" data-component="Scrolly">
 
     <div class="bloc-profil wrapper">
             <h1><span class="text-color">Je</span> suis ...</h1>
@@ -17,13 +17,13 @@
         <p>Je suis <span class="highlight-text">ouvert à la critique</span> car cela me permet de m’améliorer.</p> 
         
         <div class="bloc-btn">
-            <a class="btn_dark-blue" href="#">
+            <a class="btn_dark-blue" data-scrolly="fromLeft" href="assets/images/William Andrade CV.pdf" download>
                 <span>
                     MON CV
                 </span>
             </a>
         
-            <a class="btn_purple" href="#">
+            <a class="btn_purple" data-scrolly="fromRight" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <span>
                     PRÉSENTATION
                 </span>
@@ -33,37 +33,37 @@
 
 
     <div class="profil_image">
-        <img src="./assets/images/blue_splash_paint.png" alt="">
-        <img src="./assets/images/full_height_profil_edited.png" alt="">
-        <img src="./assets/images/cyan_splash_paint.png" alt="">
+        <img src="./assets/images/blue_splash_paint.png" data-scrolly="fromRight" alt="">
+        <img src="./assets/images/full_height_profil_edited.png" data-scrolly="fromRight" alt="">
+        <img src="./assets/images/cyan_splash_paint.png" data-scrolly="fromRight" alt="">
 
     </div>
   
 </section>
 
-<section class="contenu_connaissance wrapper">
+<section class="contenu_connaissance wrapper" data-component="Scrolly">
 
     
-    <h3 class="wrapper"><span class="text-color">Mes</span> connaissances</h3>
+    <h3 class="wrapper" data-scrolly="fromLeft"><span class="text-color">Mes</span> connaissances</h3>
     <div class="bloc-connaissance wrapper">
         
 
-        <div >
+        <div data-scrolly="fromBottom">
             <img src="./assets/images/about-coding.png" alt="">
             <p>Je performe avec <span class="highlight-text">HTML</span>, <span class="highlight-text">Css</span> et <span class="highlight-text">Js</span>. Aussi, je fais du <span class="highlight-text">C+</span> exclusivement avec Unity.</p>   
         </div>
 
-        <div>
+        <div data-scrolly="fromBottom">
             <img src="./assets/images/about-adobe.png" alt="">
             <p>Je performe avec <span class="highlight-text">After Effect</span>, <span class="highlight-text">Premier Pro</span>, <span class="highlight-text">Illustrator</span> et <span class="highlight-text">Photoshop</span>.</p>
         </div>
 
-        <div>
+        <div data-scrolly="fromLeft">
             <img src="./assets/images/about-blender.png" alt="">
             <p>J’utilise <span class="highlight-text">Blender</span> pour <span class="highlight-text">modéliser</span> et <span class="highlight-text">créer</span> un environnement qui sort de l’ordinaire.</p>  
         </div>
 
-        <div>
+        <div data-scrolly="fromRight">
             <img src="./assets/images/about-figma.png" alt="">
             <p>J’utilise <span class="highlight-text">Figma</span> pour appliquer mes idées <span class="highlight-text">graphiques</span> pour le <span class="highlight-text">web</span> ou tout autre concept.</p>   
         </div>
@@ -73,23 +73,23 @@
     
 </section>
 
-<section class="contenu_hobby wrapper">
+<section class="contenu_hobby wrapper" data-component="Scrolly">
 
-    <h3 class="wrapper" ><span class="text-color">Ce</span> que j'aime</h3>
+    <h3 class="wrapper" data-scrolly="fromLeft" ><span class="text-color">Ce</span> que j'aime</h3>
     
     <div class="cards-hobby wrapper">
 
-        <div class="card">
+        <div class="card" data-scrolly="fromLeft">
             <img src="./assets/images/about-music.png" alt="">
             <p>Écouter, jouer et composer de la musique font partie intégralement de ma vie.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-scrolly="fromBottom">
             <img src="./assets/images/about-gaming.png" alt="">
             <p>J’aime jouer, mais j’aime surtout connaitre et comprendre ce qui se cache en arrière du développement du jeu.  </p>
         </div>
 
-        <div class="card">
+        <div class="card" data-scrolly="fromRight">
             <img src="./assets/images/about-sport.png" alt="">
             <p>Faire du sport, de la randonnée, s’entrainer, bouger, etc. Il est important de maintenir une bonne santé physique et mentale.</p>
         </div>

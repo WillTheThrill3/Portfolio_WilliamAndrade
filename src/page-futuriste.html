@@ -13,27 +13,27 @@
 
 </section>
 
-<section class="projet__contenu-futuriste">
+<section class="projet__contenu-futuriste" data-component="Scrolly">
     <img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
     
     <div class="wrapper">
-        <h3>Description</h3>
-        <div class="contenu_description-futuriste">
+        <h3 data-scrolly="fromLeft">Description</h3>
+        <div class="contenu_description-futuriste" >
 
             
-            <div class="bloc_description-futuriste">
+            <div class="bloc_description-futuriste" data-scrolly="fromLeft">
             
                 <p>Dans ce projet, j’ai choisi la thématique de la science-fiction et futuriste avec une touche de rétro synthwave 80s.</p>
                 <p>Ceci était un projet scolaire réalisé individuellement. Mon objectif était d’intégrer de l’animation 2D dans un univers 3D avec Blender.</p>
             </div>
 
             <div class="encadrement-credit">
-                <div class="tester">
+                <div class="tester" data-scrolly="fromRight">
                     <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_content.jpg" alt=""></a>   
                 </div>
                          
 
-                <div class="credit-projet">
+                <div class="credit-projet" data-scrolly="fromRight">
 
                     <p>Musique: <a class="credit-link" href="https://www.youtube.com/watch?v=nUEM0Tj24AA" target="_blank" >DivKid - Impulse</a> </p>
                     <p>Référence animation: <a class="credit-link" href="https://www.mixamo.com/" target="_blank" >Mixamo</a> </p>
@@ -42,30 +42,30 @@
 
         </div>
         
-        <h3>Techniques</h3>
+        <h3 data-scrolly="fromRight">Techniques</h3>
         <div class="contenu_technique-futuriste">
 
-            <div class="bloc_technique-futuriste">
+            <div class="bloc_technique-futuriste" data-scrolly="fromRight">
                 <p>J’ai fait l’usage du "Shading" de Blender afin de créer des belles textures uniques qui harmonise bien l’ambiance que je recherchais.</p>
                 <p>Chaque texture dont la luminosité, l’émission, la réflexion métallique, la brume et les couleur ont été conçu avec le "Shading".</p>
             </div>
 
-            <a href="#" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_shading1.png" alt=""></a>
+            <a href="#" class="modale-img" data-scrolly="fromLeft" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_shading1.png" alt=""></a>
                 
             
 
         </div>
-        <h3>Organisation</h3>
+        <h3 data-scrolly="fromBottom">Organisation</h3>
         <div class="contenu_organisation-futuriste">
 
-            <div class="bloc-organisation-futuriste">
+            <div class="bloc-organisation-futuriste" data-scrolly="fromBottom">
                 <p>Je m’applique à organiser les structures et modélisation de sorte que ce soit le plus claire possible pour moi et pour autrui.</p>      
             </div>
 
             <div class="gallerie">
-                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_shading2.png" alt=""></a>
-                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_shading3.png" alt=""></a>
-                <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_hierarchy.png" alt=""></a>
+                <a href="#" data-scrolly="fromLeft" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_shading2.png" alt=""></a>
+                <a href="#" data-scrolly="fromBottom" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_shading3.png" alt=""></a>
+                <a href="#" data-scrolly="fromRight" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_hierarchy.png" alt=""></a>
                 
                 
                 
@@ -78,7 +78,7 @@
 
 </section>
 
-<template id="tpl-modal"> <!-- le ID dans lequel activera la fenêtre modale -->
+<template id="tpl-modal-tool"> <!-- le ID dans lequel activera la fenêtre modale -->
     <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
         <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
         <div class="modal__box"> <!-- le boite de la fenêtre modale -->

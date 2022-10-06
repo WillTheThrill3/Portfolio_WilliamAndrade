@@ -73,6 +73,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    
 
     padding: 0;
     position: relative;
@@ -142,6 +143,8 @@
 
     .nav-is-active & {
         transform: translateY(0);
+        background-color: var(--color-primary-dark-blue);
+       opacity: 0.95;
     }
 
     ul {
@@ -191,6 +194,11 @@
     text-transform: uppercase;
     padding: 0 20px;
     position: relative;
+
+    @media screen and (max-width: $breakpoint-md){
+        margin: 20px 0;    
+        font-size: var(--font-size-h4);
+    }
     
  //   overflow-y: hidden;
 
@@ -204,6 +212,32 @@
         left: 0;
         z-index: 1;
         transition: 0.3s all;
+        @media screen and (max-width: $breakpoint-md){ 
+            object-fit: fill;
+            width: 200px;
+            left: 40%;
+        }
+        @media screen and (max-width: 800px){ 
+            left: 38%;
+        }
+        @media screen and (max-width: 700px){ 
+            left: 36%;
+        }
+        @media screen and (max-width: 600px){ 
+            left: 34%;
+        }
+        @media screen and (max-width: 500px){ 
+            left: 30%;
+            width: 220px;
+        }
+        @media screen and (max-width: 450px){ 
+            left: 27%;
+            width: 230px;
+        }
+        @media screen and (max-width: $breakpoint-xs){ 
+            left: 20%;
+            width: 230px;
+        }
         
        
 

@@ -1,11 +1,57 @@
 .contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 571px;
+
+    @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+     }
+
+    padding: 80px 0 80px 0;
 
 
 
     .info-contact{
 
+        h2{
+            @media screen and (max-width: 418px) {
+                font-size: var(--font-size-xs-h2);
+             }
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+        .lien{
+            @media screen and (max-width: $breakpoint-md) {
+                margin: 10px 0;
+
+             }
+
+            padding-left: 10px;
+            a{
+                text-transform: lowercase;
+            }
+
+        }
+        .lien:nth-child(5){
+            a{
+               text-transform: capitalize;  
+            }
+        }
+
+
+        
+
         .reseaux-sociaux{
             display: flex;
+
+            padding: 20px 0;
+
             @media screen and (max-width: 860px) {
                 padding-bottom: 15px;
              }
@@ -41,9 +87,282 @@
         transition: all 0.4s $ease-out-expo;
         transform: scale(1);
         color: var(--color-button-purple); 
+        font-size: var(--font-size-content);
+        @media screen and (max-width: $breakpoint-md) {
+            font-size: var(--font-size-sm-content);
+         }
     }
     a:hover{
         transform: scale(1.4);
     }
 
 }
+
+
+/* ==========================================================================
+   form / component
+   ========================================================================== */
+
+   .form{
+    --input-radius: 3px;
+    --input-padding: 1em;
+
+    fieldset{
+       border: none;
+       padding: 0;
+    }
+
+    .grid {
+       display: grid;
+       gap: var(--spacing-md);
+       grid-template-columns: 1fr;
+
+/*        @media screen and (min-width: $breakpoint-md) {
+          grid-template-columns: repeat(2, 1fr);
+       } */
+       
+    }
+
+ }      
+
+ .form__footer {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 40px;
+
+    button{
+        border: none;
+        color: var(--color-white);
+
+    }
+    
+    button:hover{
+        color: var(--color-black);  
+        cursor: pointer; 
+    }
+ }
+
+ .form__body {
+    .is-sent & {
+       display: none;
+    }
+ }
+
+ .form__confirmation {
+    display: none;
+
+    .is-sent & {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+       @media screen and (max-width: $breakpoint-md) {
+        padding: 70px 0; 
+      }
+       
+    }
+ }
+
+ /*
+   input
+   ====================================================================================== */
+
+    .input__label {
+       display: block;
+       font-family: var(--font-primary);
+       font-weight: 400;
+    }
+
+    .input__element {
+       border-radius: var(--input-radius);
+       background-color: var(--color-white);
+       border: none;
+       box-shadow: 0 0 12px 3px rgba($color: #000000, $alpha: 0.15) ;
+       cursor: pointer;
+       font-family: inherit;
+       outline: none;
+       padding: var(--input-padding);
+       width: 100%;
+
+       &:-webkit-autofill,
+       &:-webkit-autofill:active {
+          -webkit-box-shadow: inset 0 0 0 1px var(--color-button-purple) !important; //ecraser les valeurs par défaut 
+          -webkit-text-fill-color: inherit !important; //ecraser les valeurs par défaut 
+       }
+
+
+       //hover 
+       &:hover,
+       + .input__label:hover::before {
+          background-color: var(--color-highlight-text-cyan); 
+          opacity: 0.6;
+          -webkit-box-shadow: inset 0 0 5px 1px var(--color-bg-project-blue) !important;
+       }
+
+       //focus
+       &:focus,
+       &:-webkit-autofill:focus,
+       &:focus + .input__label::before {
+          background-color: var(--color-highlight-text-cyan);
+          box-shadow: 0 0 6px 2px rgba($color: #000000, $alpha: 0.15) ;
+        //  -webkit-box-shadow: inset 0 0 0 2px var(--color-bg-project-blue) !important;
+       }
+
+       //autocomplete
+       &::placeholder {
+          color: var(--color-highlight-grey);
+       }
+
+    }
+ 
+
+/* ======================================= CSS POUR LES SELECTIONS À CHOIX MULTIPLE
+   select
+   ====================================================================================== */
+/* 
+.select {
+ position: relative;
+
+ .input__element {
+    appearance: none;
+    padding-right: var(--spacing-md);
+
+    &:invalid {
+       color: var(--color-neutral-dark);
+    }
+ }
+
+ option {
+    background-color: var(--color-white);
+    color: var(--color-black);
+ }
+
+ &::after {
+    --size: 12px;
+    content: '';
+    background: url('../../assets/images/icon-chevron-down.svg') no-repeat 50%
+    50%;
+    background-size: 100%;
+    height: var(--size);
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(50%);
+    right: var(--input-padding);
+    width: var(--size);
+ }
+}  
+*/
+
+ /*
+   textarea
+   ====================================================================================== */
+
+.textarea {
+ .input__element {
+    resize: vertical;
+    height: 150px;
+ }
+} 
+
+ /*
+   checkbox + radio
+   ====================================================================================== */
+
+/* ============================= CSS POUR CHECKBOX ET RADIO
+.checkbox,
+.radio  {
+ --active-scale: 1;
+
+ .input__element {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
+
+ .input__label{
+    --size: 22px;
+
+    cursor: pointer;
+    overflow: hidden;
+    padding-left: calc(var(--size) + var(--spacing-md));
+    position: relative;
+
+    &::before,
+    &::after {
+       content: '';
+       height: var(--size);
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: var(--size);
+    }
+
+    &::before {
+       background-color: var(--color-white);
+       border-radius: var(--input-radius);
+       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    &::after {
+       opacity: 0;
+       transform: scale(0);
+       transition: all 0.4s $ease-out-expo;
+    }
+ }
+
+ .input__element:checked + .input__label {
+    &::after {
+       opacity: 1;
+       transform: scale(var(--active-scale));
+    }
+ }
+
+}
+*/
+
+
+/* ======================================== CSS POUR CHECKBOX ET RADIO
+.checkbox {
+ .input__label::after {
+    background: url(../assets/images/icon-check.svg) no-repeat 50% 50%;
+    background-size: 50%;
+ }
+
+} */
+
+
+/* 
+.radio {
+ .input__label {
+    &::before {
+       border-radius: 100%;
+    }
+
+    &::after {
+       --active-scale: 0.4;
+       background-color: var(--color-black);
+       border-radius: 100%;
+    }
+ }
+}
+*/
+
+ /*
+   error
+   ====================================================================================== */
+
+   .error {
+       .input__element,
+       &.check .input__label::before,
+       &.radio .input__label::before,
+       .check .input__label::before,
+       .radio .input__label::before {
+          box-shadow: inset 0 0 0 3px var(--color-fail);
+          background-color: var(--color-fail);
+       }
+       .input__label {
+          color:  var(--color-fail);
+       }
+    }

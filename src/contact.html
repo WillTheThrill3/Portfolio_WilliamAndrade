@@ -1,6 +1,7 @@
 {% include '_partials/_header.html' %}
 
-<section class="contact">
+<img class="bg-portfolio" src="assets/images/bg-marble.jpg" alt="">
+<section class="contact wrapper">
 
     <div class="info-contact">
         <h2>Contactez-moi</h2>
@@ -20,9 +21,37 @@
 
     </div>
 
-    <div class="formulaire">
+    <form action="" class="form" autocomplete="off" data-component="Form">
+                       
+        <div class="form__body">
+            <fieldset class="grid">
+                <div class="input">
+                    <label class="input__label" for="fullname">Votre nom</label>
+                    <input class="input__element" type="text" name="fullname" id="fullname" placeholder="ex.: William Andrade" required>
+                </div>
+                <div class="input">
+                    <label class="input__label" for="email">Adresse courriel</label>
+                    <input class="input__element" type="email" name="email" id="email" placeholder="ex.: xyz@hotmail.com" required>
+                </div>
 
-    </div>
+                <div class="input textarea u-grid-fullwidth">
+                    <label class="input__label" for="comment">Votre message</label>
+                    <textarea class="input__element" name="comment" id="comment" required></textarea>
+                </div>
+
+            </fieldset>
+            
+            <div class="form__footer">
+                <button class="btn_purple">ENVOYER</button>
+            </div>
+
+        </div>
+
+        <div class="form__confirmation">
+            <h2>Merci</h2>
+            <p>votre formulaire a été envoyé avec succès!</p>
+        </div>
+    </form>
 
 
 
