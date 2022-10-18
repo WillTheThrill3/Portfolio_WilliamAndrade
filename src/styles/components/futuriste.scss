@@ -244,6 +244,8 @@
         }
         .modale-img{
             grid-row-start: 1;
+            overflow: hidden;
+            border-radius: 10px;
 
         }
 
@@ -287,8 +289,10 @@
             width: 100%;
             object-fit: cover;
             box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.15) ;
-            
-
+        }
+        .modale-img{
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         .bloc-organisation-futuriste{

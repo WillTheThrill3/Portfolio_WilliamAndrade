@@ -35,7 +35,7 @@
 
             <div class="encadrement-credit">
                 <div class="tester" data-scrolly="fromRight">
-                    <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/animaux_content2.jpg" alt=""></a>   
+                    <img id="myImg" src="./assets/images/animaux_content2.jpg" alt=""> 
                 </div>
                          
 
@@ -60,8 +60,9 @@
                 
             </div>
 
-            <a href="#" data-scrolly="fromLeft" class="modale-img" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/animaux_content.jpg" alt=""></a>
-                
+                <div class="modale-img" data-scrolly="fromLeft">
+                    <img id="myImg2"  src="./assets/images/animaux_content.jpg" alt="">
+                </div>               
             
 
         </div>
@@ -73,9 +74,18 @@
             </div>
 
             <div class="gallerie">
-                <a href="#" data-scrolly="fromLeft" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/raphael's bunny.mp4" loop="loop" autoplay="autoplay" muted></video></a>
-                <a href="#" data-scrolly="fromBottom" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/dog_play.mp4" loop="loop" autoplay="autoplay" muted></video></a>
-                <a href="#" data-scrolly="fromRight" data-component="Modal" data-modal-id="tpl-modal-tool"><video src="./assets/videos/ariane's cat.mp4" loop="loop" autoplay="autoplay" muted></video></a>
+
+                <div class="modale-img" data-scrolly="fromLeft">
+                    <video id="myImg3" src="./assets/videos/raphael's bunny.mp4" alt="" loop="loop" autoplay="autoplay" muted></video>  
+                </div>
+
+                <div class="modale-img" data-scrolly="fromBottom">
+                   <video id="myImg4" src="./assets/videos/dog_play.mp4" alt="" loop="loop" autoplay="autoplay" muted></video>
+                </div>
+
+                <div class="modale-img" data-scrolly="fromRight">
+                  <video id="myImg5" src="./assets/videos/ariane's cat.mp4" alt="" loop="loop" autoplay="autoplay" muted></video>
+                </div>
 
             </div>
 
@@ -86,17 +96,86 @@
 
 </section>
 
-<template id="tpl-modal-tool"> <!-- le ID dans lequel activera la fenêtre modale -->
-    <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
-        <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
-        <div class="modal__box"> <!-- le boite de la fenêtre modale -->
-            <div class="modal__content"> <!-- la classe contenant les propriétés pour le contenu de la fenêtre modale -->
-                <video src="./assets/videos/raphael's bunny.mp4" loop="loop" autoplay="autoplay" muted></video>    
-            </div>
-            <button class="modal__close js-close"></button> <!-- le bouton X pour fermer la fenêtre modale -->
-        </div>
-    </div>
-</template>
+<!-- The Modal -->
+<div id="myModal" class="modaltest">
+    <img class="modal-content" id="img01">
+  </div>
+  
+<div id="myModalVid" class="modaltestvid">
+    <video class="modal-content-vid" id="img01vid" loop="loop" autoplay="autoplay">
+  </div>
+
+
+  <script>
+    // Get the FIRST MODAL
+    var modal = document.getElementById('myModal');
+    var modalVid = document.getElementById('myModalVid');
+
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var img4 = document.getElementById('myImg4');
+    var img5 = document.getElementById('myImg5');
+
+    var modalImg = document.getElementById("img01");
+    var modalGif = document.getElementById("img01vid");
+    // var captionText = document.getElementById("caption");
+
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img3.onclick = function(){
+        modalVid.style.display = "block";
+        modalGif.src = this.src;
+        modalGif.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img4.onclick = function(){
+        modalVid.style.display = "block";
+        modalGif.src = this.src;
+        modalGif.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img5.onclick = function(){
+        modalVid.style.display = "block";
+        modalGif.src = this.src;
+        modalGif.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    
+    
+    // When the user clicks on <span> (x), close the modal
+    modal.onclick = function() {
+        img01.className += " out";
+        setTimeout(function() {
+           modal.style.display = "none";
+           img01.className = "modal-content";
+         }, 400);
+        
+     }    
+
+    modalVid.onclick = function() {
+        img01vid.className += " out";
+        setTimeout(function() {
+           modalVid.style.display = "none";
+           img01vid.className = "modal-content-vid";
+         }, 400);
+        
+     }    
+
+        
+    </script>  
 
 
 

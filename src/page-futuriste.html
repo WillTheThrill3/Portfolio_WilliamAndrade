@@ -29,7 +29,8 @@
 
             <div class="encadrement-credit">
                 <div class="tester" data-scrolly="fromRight">
-                    <a href="#" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_content.jpg" alt=""></a>   
+                    <img id="myImg" src="./assets/images/futuriste_content.jpg" alt="">  
+                    
                 </div>
                          
 
@@ -50,8 +51,10 @@
                 <p>Chaque texture dont la luminosité, l’émission, la réflexion métallique, la brume et les couleur ont été conçu avec le "Shading".</p>
             </div>
 
-            <a href="#" class="modale-img" data-scrolly="fromLeft" data-component="Modal" data-modal-id="tpl-modal-tool" ><img src="./assets/images/futuriste_shading1.png" alt=""></a>
-                
+            <div class="modale-img" data-scrolly="fromLeft">
+            <img id="myImg2"  src="./assets/images/futuriste_shading1.png" alt="">
+            </div>
+           
             
 
         </div>
@@ -63,9 +66,17 @@
             </div>
 
             <div class="gallerie">
-                <a href="#" data-scrolly="fromLeft" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_shading2.png" alt=""></a>
-                <a href="#" data-scrolly="fromBottom" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_shading3.png" alt=""></a>
-                <a href="#" data-scrolly="fromRight" data-component="Modal" data-modal-id="tpl-modal-tool"><img src="./assets/images/futuriste_hierarchy.png" alt=""></a>
+                <div class="modale-img" >
+                    <img  id="myImg3" data-scrolly="fromLeft" src="./assets/images/futuriste_shading2.png" alt="">
+                </div>
+                <div class="modale-img">
+                    <img id="myImg4" data-scrolly="fromBottom" src="./assets/images/futuriste_shading3.png" alt="">
+                </div>
+                <div class="modale-img">
+                    <img id="myImg5" data-scrolly="fromRight" src="./assets/images/futuriste_hierarchy.png" alt="">
+                </div>
+                
+                
                 
                 
                 
@@ -78,17 +89,70 @@
 
 </section>
 
-<template id="tpl-modal-tool"> <!-- le ID dans lequel activera la fenêtre modale -->
-    <div class="modal"> <!-- la classe qui englobera tous les propiétés SCSS -->
-        <div class="modal__scrim"></div> <!-- la classe qui applique l'opacité d'arrière-plan de la fenêtre modale -->
-        <div class="modal__box"> <!-- le boite de la fenêtre modale -->
-            <div class="modal__content"> <!-- la classe contenant les propriétés pour le contenu de la fenêtre modale -->
+<!-- The Modal -->
+<div id="myModal" class="modaltest">
+    <img class="modal-content" id="img01">
+  </div>
 
-            </div>
-            <button class="modal__close js-close"></button> <!-- le bouton X pour fermer la fenêtre modale -->
-        </div>
-    </div>
-</template>
 
+  <script>
+    // Get the FIRST MODAL
+    var modal = document.getElementById('myModal');
+
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var img4 = document.getElementById('myImg4');
+    var img5 = document.getElementById('myImg5');
+
+    var modalImg = document.getElementById("img01");
+   // var captionText = document.getElementById("caption");
+
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img4.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    img5.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+   //     captionText.innerHTML = this.alt;
+    }
+    
+    
+    // When the user clicks on <span> (x), close the modal
+    modal.onclick = function() {
+        img01.className += " out";
+        setTimeout(function() {
+           modal.style.display = "none";
+           img01.className = "modal-content";
+         }, 400);
+        
+     }    
+
+        
+    </script>  
 
 {% include '_partials/_footer.html' %}

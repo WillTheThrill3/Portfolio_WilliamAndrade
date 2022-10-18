@@ -264,6 +264,8 @@
         }
         .modale-img{
             grid-row-start: 1;
+            overflow: hidden;
+            border-radius: 10px;
 
         }
 
@@ -310,6 +312,11 @@
             
 
         }
+        .modale-img{
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
 
         .bloc-organisation-animaux{
             display: flex;
