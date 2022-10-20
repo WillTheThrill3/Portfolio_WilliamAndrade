@@ -1,3 +1,5 @@
+/*
+
 import Utils from '../utils/Utils';
 
 export default class Modal {
@@ -72,3 +74,5 @@ export default class Modal {
     }
   }
 }
+
+*/

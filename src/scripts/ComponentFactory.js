@@ -1,6 +1,6 @@
 import Carousel from './components/Carousel';
 import Header from './components/Header';
-import Modal from './components/Modal';
+// import Modal from './components/Modal'; 
 import Scrolly from './components/Scrolly';
 import Form from './components/Form';
 
@@ -10,7 +10,7 @@ export default class ComponentFactory {
     this.componentList = {
       Carousel,
       Header,
-      Modal,
+      // Modal,
       Scrolly,
       Form,
     };
