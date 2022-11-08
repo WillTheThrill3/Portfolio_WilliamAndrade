@@ -22,14 +22,14 @@
         display: flex;
         align-items: flex-end;
     //    justify-content: flex-end;
-        margin: 0 0 300px 0;
+        margin: 0 0 160px 0;
         width: inherit;
 
         @media screen and (max-width: $breakpoint-sm) {
-            margin: 0 0 120px 0;
+            margin: 0 0 80px 0;
         }
         @media screen and (max-width: $breakpoint-md) {
-            margin: 0 0 160px 0;
+            margin: 0 0 120px 0;
         }
         
 
@@ -161,14 +161,14 @@
         flex-direction: row-reverse; // MODIFICATION
         position: relative; // MODIFICATION
         right: -100px; // MODIFICATION
-        margin: 0 0 300px 0;
+        margin: 0 0 160px 0;
         width: inherit;
 
         @media screen and (max-width: $breakpoint-md) {
-            margin: 0 0 160px 0;
+            margin: 0 0 120px 0;
         }
         @media screen and (max-width: $breakpoint-sm) {
-            margin: 0 0 120px 0;
+            margin: 0 0 80px 0;
         }
 
         @media screen and (max-width: $breakpoint-lg) {
