@@ -25,11 +25,11 @@
         margin: 0 0 160px 0;
         width: inherit;
 
-        @media screen and (max-width: $breakpoint-sm) {
-            margin: 0 0 80px 0;
-        }
         @media screen and (max-width: $breakpoint-md) {
             margin: 0 0 120px 0;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            margin: 0 0 80px 0;
         }
         
 
